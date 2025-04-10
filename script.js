@@ -2,6 +2,7 @@
 const appContainerEl = document.querySelector("#app-container")
 const videosEls = document.querySelectorAll("video")
 const audioIconsEls = document.querySelectorAll(".volume")
+const likeIconsEls = document.querySelectorAll(".like-icon")
 
 // Variabili globali: è il volume attivo
 const halfScreenHeight = window.innerHeight / 2
@@ -40,5 +41,11 @@ audioIconsEls.forEach(function (audioIcon) {
         audioIconsEls.forEach(function (audioIcon) {
             audioIcon.className = iconClass
         })
+    })
+})
+
+likeIconsEls.forEach(function (likeIcon) {
+    likeIcon.addEventListener("click", function () {
+        likeIcon.classList.toggle("liked");
     })
 })

@@ -49,6 +49,14 @@ video {
     gap: 20px;
 }
 
+.contols i{
+    cursor: pointer;
+}
+
+.controls i.liked {
+    color: red;
+}
+
 .info {
     position: absolute;
     bottom: 20px;
